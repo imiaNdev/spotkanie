@@ -171,7 +171,7 @@ https://app.powerbi.com/links/yotwd4YNRw?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d34354
 - Widok zarządczy (Streamlit – w budowie):  
 ruch → deklaracje sprzedaży → realizacje → cele i KPI  
 
-- Czy obecny sposób przygotowania prezentacji dla EXECOM i materiałów na BR jest optymalny,
+- Czy obecny sposób przygotowania prezentacji na EXECOM i materiałów na BR jest optymalny,
 czy widzisz przestrzeń do usprawnień?  
 
 - Kierunek: jeden spójny widok do pracy operacyjnej i zarządczej  
