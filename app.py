@@ -21,7 +21,6 @@ COLOR_APP_BG = "#0E1117"
 COLOR_SECTION_BG = "#163329"
 COLOR_ACCENT = "#A37752"
 COLOR_TEXT_PRIMARY = "#E8E8E8"
-COLOR_TEXT_SECONDARY = "#B0B3B8"
 
 # ======================
 # STYLE (CSS)
@@ -110,6 +109,14 @@ st.markdown(
         margin-bottom: 8px;
         line-height: 1.45;
     }}
+
+    .subnote {{
+        font-size: 15px;
+        color: #C9CDD2;
+        margin-top: -4px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }}
     </style>
     """,
     unsafe_allow_html=True,
@@ -145,12 +152,77 @@ with c2:
 # SEKCJE
 # ======================
 with st.expander("🎯 Główne inicjatywy", expanded=st.session_state.expand_all):
-    st.markdown("""
-- CC – odzysk sprzedaży po soft-odmowie  
-- CC – jakość rozmów i zgodność skryptu (w tym AI)  
-- D2D – kontrola dystrybucji ulotek  
-- D2D – odzysk kontaktów poprzez transfer na CC  
-- POS – czas pracy agentów, ruch klientów, wynik rozmów oraz zbieranie leadów przy braku sprzedaży  
+
+    with st.expander("🟡 CC – jakość rozmów i zgodność skryptu (AI)"):
+        st.markdown("""
+**Status:** 🟡 w trakcie  
+
+**Kierunek:** wykorzystanie narzędzi AI do wsparcia analizy rozmów sprzedażowych  
+
+**Zakres:**  
+• poprawność realizacji skryptu prawnego w rozmowach sprzedażowych  
+• jakość rozmowy i skuteczność sprzedażowa (do dalszego zdefiniowania metryk)  
+
+**Kolejny krok:** wypracowanie modelu pracy, w którym analiza rozmów realizowana jest bezpośrednio w pionie sprzedaży (z wykorzystaniem narzędzi AI jako wsparcia), co pozwoli skrócić czas iteracji i ograniczyć zależności między zespołami  
+""")
+
+    with st.expander("🟡 CC – odzysk sprzedaży po soft-odmowie"):
+        st.markdown("""
+**Status:** 🟡 w trakcie  
+**INIT:** 6319  
+
+**Opis:** analiza możliwości wdrożenia mechanizmu powrotu klienta do oferty po soft-odmowie (np. e-mail + callback / lead)  
+
+**Status IT:** analiza wstępna  
+
+**Potencjał:** odzysk części sprzedaży z istniejących kontaktów (ok. 100–250 tys. zł rocznie)  
+""")
+
+    with st.expander("🟠 D2D – kontrola dystrybucji ulotek"):
+        st.markdown("""
+**Status:** 🟠 oczekujące  
+
+**Opis:** temat wstrzymany do momentu wyłonienia nowego dyrektora kanału D2D  
+
+**Cel:** uzyskanie widoczności pokrycia dystrybucji oraz powiązanie jej z wynikiem sprzedażowym  
+
+**Potencjał:** wzrost sprzedaży o ok. 20% (~200 tys. zł rocznie)  
+
+**Alternatywa:** zagregowany raport pokazujący per handlowiec liczbę ulotek, liczbę połączeń oraz wynik sprzedażowy  
+https://app.powerbi.com/links/qA-hshMZcv?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d3435484&pbi_source=linkShare  
+""")
+
+    with st.expander("🔵 POS – czas pracy agentów"):
+        st.markdown("""
+**Status:** 🔵 FROZEN  
+**INIT:** 6176  
+
+**Opis:** brak zgody po stronie IT – do ewentualnego planowania w PSO  
+
+**Wymaga:** zmian systemowych w Suflerze (logowanie / wylogowanie agentów)  
+
+**Potencjał:** poprawa dostępności i zarządzania obsadą (ok. 57 tys. zł rocznie)  
+""")
+
+    with st.expander("🟡 POS – raportowanie wizyt klientów"):
+        st.markdown("""
+**Status:** 🟡 w trakcie  
+**INIT:** 6291  
+
+**Opis:** rozszerzenie raportowania do poziomu pojedynczej wizyty (1 klient = 1 kontakt = 1 wynik)  
+
+**Cel:** pomiar rzeczywistego ruchu oraz konwersji wizyt na sprzedaż  
+
+**Potencjał:** identyfikacja leadów i wzrost sprzedaży (ok. 180–400 tys. zł rocznie)  
+""")
+
+    with st.expander("🟠 D2D – odzysk kontaktów poprzez transfer na CC"):
+        st.markdown("""
+**Status:** 🟠 oczekujące  
+
+**Opis:** wymaga wpięcia numerów do systemu Avaya – obecnie relacja kosztów do potencjalnego zysku nie uzasadnia priorytetyzacji  
+
+**Alternatywa:** raport identyfikujący krótkie próby kontaktu (<X sek.) oraz weryfikujący ponowny kontakt zakończony dłuższą rozmową  
 """)
 
 with st.expander("🚧 Kluczowe blokery", expanded=st.session_state.expand_all):
@@ -171,8 +243,7 @@ https://app.powerbi.com/links/yotwd4YNRw?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d34354
 - Widok zarządczy (Streamlit – w budowie):  
 ruch → deklaracje sprzedaży → realizacje → cele i KPI  
 
-- Czy obecny sposób przygotowania prezentacji na EXECOM i materiałów na BR jest optymalny,
-czy widzisz przestrzeń do usprawnień?  
+- Czy obecny sposób przygotowania prezentacji dla EXCOM i materiałów na BR jest optymalny, czy widzisz przestrzeń do usprawnień?  
 
 - Kierunek: jeden spójny widok do pracy operacyjnej i zarządczej  
 """)
