@@ -21,6 +21,7 @@ COLOR_APP_BG = "#0E1117"
 COLOR_SECTION_BG = "#163329"
 COLOR_ACCENT = "#A37752"
 COLOR_TEXT_PRIMARY = "#E8E8E8"
+COLOR_TEXT_SECONDARY = "#B0B3B8"
 
 # ======================
 # STYLE (CSS)
@@ -109,14 +110,6 @@ st.markdown(
         margin-bottom: 8px;
         line-height: 1.45;
     }}
-
-    .subnote {{
-        font-size: 15px;
-        color: #C9CDD2;
-        margin-top: -4px;
-        margin-bottom: 10px;
-        line-height: 1.5;
-    }}
     </style>
     """,
     unsafe_allow_html=True,
@@ -178,20 +171,6 @@ with st.expander("🎯 Główne inicjatywy", expanded=st.session_state.expand_al
 **Potencjał:** odzysk części sprzedaży z istniejących kontaktów (ok. 100–250 tys. zł rocznie)  
 """)
 
-    with st.expander("🟠 D2D – kontrola dystrybucji ulotek"):
-        st.markdown("""
-**Status:** 🟠 oczekujące  
-
-**Opis:** temat wstrzymany do momentu wyłonienia nowego dyrektora kanału D2D  
-
-**Cel:** uzyskanie widoczności pokrycia dystrybucji oraz powiązanie jej z wynikiem sprzedażowym  
-
-**Potencjał:** wzrost sprzedaży o ok. 20% (~200 tys. zł rocznie)  
-
-**Alternatywa:** zagregowany raport pokazujący per handlowiec liczbę ulotek, liczbę połączeń oraz wynik sprzedażowy  
-https://app.powerbi.com/links/qA-hshMZcv?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d3435484&pbi_source=linkShare  
-""")
-
     with st.expander("🔵 POS – czas pracy agentów"):
         st.markdown("""
 **Status:** 🔵 FROZEN  
@@ -216,6 +195,20 @@ https://app.powerbi.com/links/qA-hshMZcv?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d34354
 **Potencjał:** identyfikacja leadów i wzrost sprzedaży (ok. 180–400 tys. zł rocznie)  
 """)
 
+    with st.expander("🟠 D2D – kontrola dystrybucji ulotek"):
+        st.markdown("""
+**Status:** 🟠 oczekujące  
+
+**Opis:** temat wstrzymany do momentu wyłonienia nowego dyrektora kanału D2D  
+
+**Cel:** uzyskanie widoczności pokrycia dystrybucji oraz powiązanie jej z wynikiem sprzedażowym  
+
+**Potencjał:** wzrost sprzedaży o ok. 20% (~200 tys. zł rocznie)  
+
+**Alternatywa:** zagregowany raport pokazujący per handlowiec liczbę ulotek, liczbę połączeń oraz wynik sprzedażowy  
+https://app.powerbi.com/links/qA-hshMZcv?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d3435484&pbi_source=linkShare  
+""")
+
     with st.expander("🟠 D2D – odzysk kontaktów poprzez transfer na CC"):
         st.markdown("""
 **Status:** 🟠 oczekujące  
@@ -228,8 +221,11 @@ https://app.powerbi.com/links/qA-hshMZcv?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d34354
 with st.expander("🚧 Kluczowe blokery", expanded=st.session_state.expand_all):
     st.markdown("""
 - Potencjał inicjatyw jest widoczny, natomiast część z nich wymaga zaangażowania obszarów wspierających poza sprzedażą  
+
 - Ograniczona dostępność zasobów technicznych wpływa dziś na tempo uruchamiania wybranych tematów  
+
 - Projekty oparte o zmiany systemowe i integracje mają dłuższy czas wejścia niż inicjatywy operacyjne  
+
 - Największym wyzwaniem są zależności międzyzespołowe, a nie brak kierunków działań  
 """)
 
