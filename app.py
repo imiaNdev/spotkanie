@@ -185,7 +185,7 @@ https://app.powerbi.com/links/yotwd4YNRw?ctid=7f5db18f-4f22-42c1-b4c8-e8c0d34354
 
 W ostatnim czasie raporty Power BI zastąpiły wcześniejszą pracę na Excelach.  
 
-**Sposób prezentacji postępów (Task Force / EXCOM / BR):**  
+**Sposób prezentacji postępów (Task Force / EXECOM / BR):**  
 Czy obecny sposób przygotowania materiałów jest optymalny,  
 czy widzisz przestrzeń do usprawnień?  
 
