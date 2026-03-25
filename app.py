@@ -255,11 +255,11 @@ with st.expander("⚙️ CX – obszary do automatyzacji", expanded=st.session_s
 
 with st.expander("🔭 Kierunek i next step", expanded=st.session_state.expand_all):
     st.markdown("""
-- Chcę dalej rozwijać się w kierunku łączenia danych, procesów i decyzji sprzedażowych  
+- Widzę swoją rolę jako połączenie analityki, rozwoju narzędzi oraz prowadzenia inicjatyw wspierających efektywność sprzedaży  
 
-- Widzę przestrzeń do uporządkowania obszaru i budowy spójnego podejścia do pracy na danych  
+- Naturalnym kierunkiem jest dalsze uporządkowanie obszaru i budowa spójnego podejścia do pracy na danych  
 
-- Zależy mi na większym zaangażowaniu w tematy przekładające się bezpośrednio na wynik i efektywność  
+- Chciałbym doprecyzować docelowy zakres tej roli oraz sposób jej osadzenia w organizacji  
 
-- Jestem otwarty na rozmowę o dalszym kierunku współpracy i zakresie odpowiedzialności  
+- W kolejnym kroku chciałbym również porozmawiać o tym, jak ten zakres powinien przekładać się na poziom odpowiedzialności i wynagrodzenia  
 """)
